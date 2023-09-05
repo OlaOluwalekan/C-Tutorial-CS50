@@ -3,7 +3,8 @@
 
 int main(void)
 {
-  int x = get_int("what is x? ")
-  int y = get_int("what is y? ")
-  printf("The sum of x and y is: %");
+  int x = get_int("what is x? ");
+  int y = get_int("what is y? ");
+  printf("The sum of x and y is: %i", x + y);
+  printf("\n");
 }
