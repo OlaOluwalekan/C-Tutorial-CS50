@@ -7,4 +7,8 @@ int main(void)
   printf("Your name is %s\n", name);
 
   int age = get_int("how hold are you? ");
+  printf("You are %i years old\n", age);
+
+  int phoneNumber = get_int("Give me your phone number: ");
+  printf("Your phone number is %i\n", phoneNumber);
 }
