@@ -11,7 +11,7 @@ int main(void)
   do {
     float pow = 1;
     for (int j = 1; j <= i; j++) {
-      pow = 1 * (13 / 12);
+      pow *= (13 / 12);
     }
     startPo = pow * startPo;
     i++;
