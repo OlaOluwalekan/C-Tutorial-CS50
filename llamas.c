@@ -9,12 +9,13 @@ int main(void)
   // int po = 0;
 
   do {
-    float pow = 1
+    float pow = 1;
     for (int j = 1; j <= i; j++) {
       pow = 1 * (13 / 12);
     }
     startPo = pow * startPo;
-  } while (startPo <= 13)
+    i++;
+  } while (startPo <= 13);
 
   // while (i <= year) {
   //   startPo = (13 * startPo) / 12;
@@ -22,6 +23,6 @@ int main(void)
   // }
 
   // printf("Population of llamas after %i years is %f ", year, startPo);
-  printf("Number of years for llamas to reach %f population is: %i", startPo, i)
+  printf("Number of years for llamas to reach %f population is: %i", startPo, i);
   printf("\n");
 }
