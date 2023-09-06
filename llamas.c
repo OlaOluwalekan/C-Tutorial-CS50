@@ -9,14 +9,24 @@ int main(void)
   int targetPo = 13;
   // int po = 0;
 
-  do {
-    float pow = 1;
-    for (int j = 1; j <= i; j++) {
-      pow *= (13 / 12);
-    }
-    startPo = pow * startPo;
-    i++;
-  } while (startPo <= targetPo);
+  while (startPo <= targetPo) {
+      float pow = 1;
+      for (int j = 1; j <= i; j++)
+      {
+          pow *= (13 / 12);
+      }
+      startPo = pow * startPo;
+      i++;
+  }
+
+  // do {
+  //   float pow = 1;
+  //   for (int j = 1; j <= i; j++) {
+  //     pow *= (13 / 12);
+  //   }
+  //   startPo = pow * startPo;
+  //   i++;
+  // } while (startPo <= targetPo);
 
   // while (i <= year) {
   //   startPo = (13 * startPo) / 12;
