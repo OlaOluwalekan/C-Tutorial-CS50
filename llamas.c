@@ -4,11 +4,11 @@
 int main(void)
 {
   float startPo = 12;
-  int year = 20;
+  int year = 1;
   int i = 1;
   // int po = 0;
 
-  while (i <= year) {
+  while (startPo <= 13) {
     startPo = (13 * startPo) / 12;
     i++;
   }
