@@ -3,7 +3,7 @@
 
 int main(void)
 {
-  float startPo = 12;
+  int startPo = 12;
   int year = 20;
   int i = 1;
   int targetPo = 13;
@@ -16,7 +16,7 @@ int main(void)
           pow *= (13 / 12);
       }
       startPo = pow * startPo;
-      printf("%f", startPo);
+      printf("%i", startPo);
       i++;
   }
 
