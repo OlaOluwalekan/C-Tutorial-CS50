@@ -3,7 +3,7 @@
 
 int main(void)
 {
-  int startPo = 12;
+  float startPo = 12;
   int year = 20;
   int i = 1;
   // int po = 0;
@@ -13,6 +13,6 @@ int main(void)
     i++;
   }
 
-  printf("Population of llamas after %i years is %i ", year, startPo);
+  printf("Population of llamas after %i years is %f ", year, startPo);
   printf("\n");
 }
