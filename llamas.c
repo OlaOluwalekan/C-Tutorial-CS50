@@ -8,8 +8,12 @@ int main(void)
   int i = 1;
   // int po = 0;
 
-  while (startPo <= 13) {
+  do
+  {
     startPo = (13 * startPo) / 12;
+
+  }
+  while (startPo <= 13) {
     i++;
   }
 
