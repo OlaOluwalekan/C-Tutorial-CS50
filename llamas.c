@@ -16,6 +16,7 @@ int main(void)
           pow *= (13 / 12);
       }
       startPo = pow * startPo;
+      printf(startPo);
       i++;
   }
 
