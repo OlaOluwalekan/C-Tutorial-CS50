@@ -25,9 +25,12 @@ int main(void)
         currentPo += startPo / 3;
         currentPo -= currentPo / 4;
 
-        if (currentPo == startingPo) {
-            
+        if (currentPo == startPo) {
+            printf("%i : %i\n", currentPo, startPo);
+            break;
         }
+
+        startPo = currentPo;
 
         year++;
     }
