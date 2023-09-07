@@ -20,7 +20,7 @@ int main(void)
 
   int year = 0;
 
-  unrounded = startPo / 12;
+  unrounded = (float) startPo / 12;
 
   startPo = round(startPo / 12);
 
