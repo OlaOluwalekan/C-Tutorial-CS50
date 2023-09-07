@@ -16,7 +16,7 @@ int main(void)
       //     pow *= (13 / 12);
       // }
       startPo += (startPo / 12);
-      // printf("%i", startPo);
+      printf("%i\n", startPo);
       year++;
   }
 
@@ -35,6 +35,6 @@ int main(void)
   // }
 
   // printf("Population of llamas after %i years is %f ", year, startPo);
-  printf("Number of years for llamas to reach %i population is: %i", targetPo, i);
+  printf("Number of years for llamas to reach %i population is: %i", targetPo, year);
   printf("\n");
 }
