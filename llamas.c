@@ -28,9 +28,9 @@ int main(void)
 
   while (startPo < targetPo)
   {
-      startPo += (startPo / 12);
-    //   startPo += round(startPo / 12);
-      // startPo -= round(startPo / 3);
+    //   startPo += (startPo / 12);
+      startPo += floor(startPo / 3);
+      startPo -= floor(startPo / 4);
       year++;
   }
 
