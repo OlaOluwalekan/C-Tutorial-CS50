@@ -6,7 +6,7 @@ int main(void)
 {
     int startPo;
     int targetPo;
-    int currentPo;
+    int currentPo = 0;
 
     do
     {
