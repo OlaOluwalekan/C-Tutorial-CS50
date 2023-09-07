@@ -20,9 +20,9 @@ int main(void)
 
   int year = 0;
 
-  unrounded = (float) startPo / 12;
+  unrounded = (float) startPo / 4;
 
-  startPo = floor(startPo / 12);
+  startPo = floor(startPo / 4);
 
   printf("%i : %f", startPo, unrounded);
 
@@ -35,6 +35,6 @@ int main(void)
 //   }
 
   // printf("Population of llamas after %i years is %f ", year, startPo);
-  printf("Number of years for llamas to reach %i population is: %i", targetPo, year);
+//   printf("Number of years for llamas to reach %i population is: %i", targetPo, year);
   printf("\n");
 }
