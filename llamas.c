@@ -25,7 +25,9 @@ int main(void)
     while (startPo < targetPo)
     {
         currentPo += startPo / 3;
+        printf("%i : ", currentPo);
         currentPo -= currentPo / 4;
+        printf("%i ", currentPo);
 
         if (currentPo == startPo) {
             printf("%i : %i\n", currentPo, startPo);
