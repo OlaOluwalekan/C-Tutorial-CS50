@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    int startPo;
+    float startPo;
     int targetPo;
     float unrounded;
 
@@ -20,18 +20,18 @@ int main(void)
 
   int year = 0;
 
-  unrounded = (float) startPo / 12;
+  // unrounded = (float) startPo / 12;
 
-  startPo = round(startPo / 12);
+  // startPo = round(startPo / 12);
 
-  printf("%i : %f", startPo, unrounded);
+  printf("%i : %f", (int)startPo, unrounded);
 
-  // while (startPo < targetPo)
-  // {
-  //     startPo += round(startPo / 4);
-  //     startPo -= round(startPo / 3);
-  //     year++;
-  // }
+  while (startPo < targetPo)
+  {
+      startPo += round(startPo / 4);
+      startPo -= round(startPo / 3);
+      year++;
+  }
 
   // printf("Population of llamas after %i years is %f ", year, startPo);
   // printf("Number of years for llamas to reach %i population is: %i", targetPo, year);
