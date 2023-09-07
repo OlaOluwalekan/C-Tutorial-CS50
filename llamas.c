@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    float startPo;
+    int startPo;
     int targetPo;
     float unrounded;
 
