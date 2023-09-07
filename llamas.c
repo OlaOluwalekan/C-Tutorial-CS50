@@ -25,7 +25,8 @@ int main(void)
       // {
       //     pow *= (13 / 12);
       // }
-      startPo += (startPo / 12);
+      startPo += (startPo / 4);
+      startPo -= (startPo / 3);
       // printf("%i\n", startPo);
       year++;
   }
