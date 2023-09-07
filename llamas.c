@@ -8,7 +8,7 @@ int main(void)
   int year = 0;
   int i = 1;
 
-  while (startPo <= targetPo)
+  while (startPo < targetPo)
   {
       // float pow = 1;
       // for (int j = 0; j <= year; j++)
