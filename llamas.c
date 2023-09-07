@@ -6,6 +6,7 @@ int main(void)
 {
     int startPo;
     int targetPo;
+    float unrounded;
 
     do
     {
@@ -19,9 +20,11 @@ int main(void)
 
   int year = 0;
 
-  startPo += round(startPo / 12);
+  unrounded = startPo / 12;
 
-  printf("%i", startPo);
+  startPo = round(startPo / 12);
+
+  printf("%i : %f", startPo, unrounded);
 
   // while (startPo < targetPo)
   // {
