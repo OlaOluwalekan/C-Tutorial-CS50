@@ -24,15 +24,15 @@ int main(void)
 
     while (startPo < targetPo)
     {
-        currentPo += startPo / 3;
-        printf("%i : ", currentPo);
-        currentPo -= startPo / 4;
-        printf("%i ", currentPo);
+        // currentPo += startPo / 3;
+        // printf("%i : ", currentPo);
+        // currentPo -= startPo / 4;
+        // printf("%i ", currentPo);
 
-        if (currentPo == startPo) {
-            printf("%i : %i\n", currentPo, startPo);
-            break;
-        }
+        // if (currentPo == startPo) {
+        //     printf("%i : %i\n", currentPo, startPo);
+        //     break;
+        // }
 
         startPo = currentPo;
 
