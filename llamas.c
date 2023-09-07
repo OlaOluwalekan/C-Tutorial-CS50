@@ -11,13 +11,13 @@ int main(void)
   while (startPo <= targetPo)
   {
       float pow = 1;
-      for (int j = 1; j <= i; j++)
+      for (int j = 0; j <= year; j++)
       {
           pow *= (13 / 12);
       }
       startPo = pow * startPo;
       printf("%i", startPo);
-      i++;
+      year++;
   }
 
   // do {
