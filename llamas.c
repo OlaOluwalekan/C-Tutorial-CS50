@@ -22,8 +22,8 @@ int main(void)
 
     while (startPo < targetPo)
     {
-        currentPo += floor(startPo / 3);
-        startPo -= floor(startPo / 4);
+        startPo += startPo / 3;
+        startPo -= startPo / 4;
         year++;
     }
 
