@@ -26,7 +26,7 @@ int main(void)
     {
         currentPo += startPo / 3;
         printf("%i : ", currentPo);
-        currentPo -= currentPo / 4;
+        currentPo -= startPo / 4;
         printf("%i ", currentPo);
 
         if (currentPo == startPo) {
