@@ -19,34 +19,18 @@ int main(void)
 
   int year = 0;
 
-  while (startPo < targetPo)
-  {
-      // float pow = 1;
-      // for (int j = 0; j <= year; j++)
-      // {
-      //     pow *= (13 / 12);
-      // }
-      startPo += (startPo / 4);
-      startPo -= (startPo / 3);
-      // printf("%i\n", startPo);
-      year++;
-  }
+  startPo += round(startPo / 12);
 
-  // do {
-  //   float pow = 1;
-  //   for (int j = 1; j <= i; j++) {
-  //     pow *= (13 / 12);
-  //   }
-  //   startPo = pow * startPo;
-  //   i++;
-  // } while (startPo <= targetPo);
+  printf("%i", startPo);
 
-  // while (i <= year) {
-  //   startPo = (13 * startPo) / 12;
-  //   i++;
+  // while (startPo < targetPo)
+  // {
+  //     startPo += round(startPo / 4);
+  //     startPo -= round(startPo / 3);
+  //     year++;
   // }
 
   // printf("Population of llamas after %i years is %f ", year, startPo);
-  printf("Number of years for llamas to reach %i population is: %i", targetPo, year);
+  // printf("Number of years for llamas to reach %i population is: %i", targetPo, year);
   printf("\n");
 }
