@@ -4,7 +4,7 @@
 int main(void)
 {
   int startPo = get_int("What is the starting population: ");
-  int targetPo = get_int("For how many years: ");
+  int targetPo = get_int("What is ending population: ");
   int year = 0;
   int i = 1;
 
@@ -15,7 +15,7 @@ int main(void)
       // {
       //     pow *= (13 / 12);
       // }
-      startPo = pow * startPo;
+      startPo += (startPo / 12);
       printf("%i", startPo);
       year++;
   }
