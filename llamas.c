@@ -34,7 +34,9 @@ int main(void)
         //     break;
         // }
 
-        startPo = currentPo;
+        // startPo = currentPo;
+
+        startPo += (startPo / 3) - (startPo / 4);
 
         year++;
     }
