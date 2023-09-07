@@ -12,6 +12,7 @@ int main(void)
         startPo = get_int("What is the starting population: ");
         if (startPo < 9)
         {
+            printf("\n");
             printf("minimum starting population is 9\n");
         }
     } while (startPo < 9);
@@ -21,6 +22,7 @@ int main(void)
         targetPo = get_int("What is ending population: ");
         if (targetPo < startPo)
         {
+            printf("\n");
             printf("Target population cannot be less than start population\n");
         }
     } while (targetPo < startPo);
