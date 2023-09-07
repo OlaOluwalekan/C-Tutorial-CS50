@@ -3,10 +3,20 @@
 
 int main(void)
 {
-  int startPo = get_int("What is the starting population: ");
-  int targetPo = get_int("What is ending population: ");
+    int startPo;
+    int targetPo;
+
+    do
+    {
+        startPo = get_int("What is the starting population: ");
+    } while (startPo < 9);
+
+    do
+    {
+        targetPo = get_int("What is ending population: ");
+    } while (targetPo < startPo);
+
   int year = 0;
-  int i = 1;
 
   while (startPo < targetPo)
   {
