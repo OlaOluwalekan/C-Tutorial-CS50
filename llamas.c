@@ -6,7 +6,6 @@ int main(void)
 {
     int startPo;
     int targetPo;
-    float unrounded;
 
     do
     {
@@ -18,23 +17,15 @@ int main(void)
         targetPo = get_int("What is ending population: ");
     } while (targetPo < startPo);
 
-  int year = 0;
+    int year = 0;
 
-//   unrounded = (float) startPo / 4;
+    while (startPo < targetPo)
+    {
+        startPo += floor(startPo / 3);
+        startPo -= floor(startPo / 4);
+        year++;
+    }
 
-//   startPo = floor(startPo / 4);
-
-//   printf("%i : %f", startPo, unrounded);
-
-  while (startPo < targetPo)
-  {
-    //   startPo += (startPo / 12);
-      startPo += floor(startPo / 3);
-      startPo -= floor(startPo / 4);
-      year++;
-  }
-
-  // printf("Population of llamas after %i years is %f ", year, startPo);
-  printf("Number of years for llamas to reach %i population is: %i", targetPo, year);
-  printf("\n");
+    printf("Number of years for llamas to reach %i population is: %i", targetPo, year);
+    printf("\n");
 }
