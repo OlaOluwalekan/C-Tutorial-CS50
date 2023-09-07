@@ -3,13 +3,13 @@
 
 int main(void)
 {
-  int startPo = 12;
-  int year = 20;
+  int startPo = get_int("What is the starting population: ");
+  int targetPo = get_int("For how many years: ");
+  int year = 0;
   int i = 1;
-  int targetPo = 13;
-  // int po = 0;
 
-  while (startPo <= targetPo) {
+  while (startPo <= targetPo)
+  {
       float pow = 1;
       for (int j = 1; j <= i; j++)
       {
