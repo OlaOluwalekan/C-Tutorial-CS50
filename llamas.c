@@ -25,6 +25,10 @@ int main(void)
         currentPo += startPo / 3;
         currentPo -= currentPo / 4;
 
+        if (currentPo == startingPo) {
+            
+        }
+
         year++;
     }
 
