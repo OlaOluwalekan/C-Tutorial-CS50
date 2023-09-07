@@ -6,35 +6,29 @@ int main(void)
 {
     int startPo;
     int targetPo;
-    int currentPo;
 
     do
     {
         startPo = get_int("What is the starting population: ");
+        if (startPo < 9)
+        {
+            printf("minimum starting population is 9\n");
+        }
     } while (startPo < 9);
 
     do
     {
         targetPo = get_int("What is ending population: ");
+        if (targetPo < startPo)
+        {
+            printf("Target population cannot be less than start population\n");
+        }
     } while (targetPo < startPo);
 
     int year = 0;
 
-    currentPo = startPo;
-
     while (startPo < targetPo)
     {
-        // currentPo += startPo / 3;
-        // printf("%i : ", currentPo);
-        // currentPo -= startPo / 4;
-        // printf("%i ", currentPo);
-
-        // if (currentPo == startPo) {
-        //     printf("%i : %i\n", currentPo, startPo);
-        //     break;
-        // }
-
-        // startPo = currentPo;
 
         startPo += (startPo / 3) - (startPo / 4);
 
