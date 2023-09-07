@@ -20,19 +20,19 @@ int main(void)
 
   int year = 0;
 
-  // unrounded = (float) startPo / 12;
+  unrounded = (float) startPo / 12;
 
-  // startPo = round(startPo / 12);
+  startPo = floor(startPo / 12);
 
-  // printf("%i : %f", (int)startPo, unrounded);
+  printf("%i : %f", startPo, unrounded);
 
-  while (startPo < targetPo)
-  {
-    //   startPo += (startPo / 12);
-      startPo += floor(startPo / 3);
-      startPo -= floor(startPo / 4);
-      year++;
-  }
+//   while (startPo < targetPo)
+//   {
+//     //   startPo += (startPo / 12);
+//       startPo += floor(startPo / 3);
+//       startPo -= floor(startPo / 4);
+//       year++;
+//   }
 
   // printf("Population of llamas after %i years is %f ", year, startPo);
   printf("Number of years for llamas to reach %i population is: %i", targetPo, year);
